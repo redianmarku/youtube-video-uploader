@@ -14,10 +14,10 @@ def authenticate_youtube():
     if os.path.exists(TOKEN_FILE):
         os.remove(TOKEN_FILE)
 
-    # Load client secrets file
-    client_secrets_file = "/Users/redi/Desktop/youtube-uplaod/client.json"
+    # Load client secrets file, put the path of your file
+    client_secrets_file = "client.json"
 
-    # Get credentials and create an API client
+    
     flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
         client_secrets_file, SCOPES)
     credentials = flow.run_local_server()
@@ -40,7 +40,8 @@ def upload_video(youtube):
         }
     }
 
-    media_file = "/Users/redi/Desktop/youtube-uploader/video.mp4"
+    # put the path of the video that you want to upload
+    media_file = "video.mp4"
 
     request = youtube.videos().insert(
         part="snippet,status",
