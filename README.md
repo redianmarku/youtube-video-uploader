@@ -18,7 +18,9 @@ Before you can use this script, ensure you have the following:
 2. **Create a New Project**: Click on "Select Project" at the top, then "New Project". Give it a name and create it.
 3. **Enable YouTube Data API v3**: Go to "API & Services Dashboard" and click on "Enable APIs and Services". Search for "YouTube Data API v3" and enable it.
 4. **Set Up OAuth Consent Screen**: Go to "OAuth consent screen" on the left, select "External", and fill in the required details.
-5. **Create OAuth 2.0 Credentials**: Go to "Credentials", click on "Create Credentials", and select "OAuth 2.0 Client IDs". Download the JSON file with your credentials and save it securely.
+5. **Create OAuth 2.0 Credentials**: Go to "Credentials", click on "Create Credentials", and select "OAuth 2.0 Client IDs".
+6. **Selecting application type**: Select Desktop App, this is configure redirect uri for you.
+7. **Download the OAuth 2.0 credentials**: Download the JSON file with your credentials and save it securely.
 
 ### Step 2: Install Required Libraries
 
